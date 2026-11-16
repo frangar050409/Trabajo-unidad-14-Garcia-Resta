@@ -177,14 +177,6 @@ header p:last-child {
   color: #cfcfe6;
 }
 
-.modulo code {
-  margin-top: auto;
-  font-size: 0.78rem;
-  padding: 8px 10px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.35);
-}
-
 footer {
   text-align: center;
   color: #8a8aa5;
