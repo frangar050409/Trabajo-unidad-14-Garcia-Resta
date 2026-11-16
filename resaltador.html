@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resaltador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Newsreader:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resaltador.css">
+</head>
+<body>
+  <a class="volver" href="index.html">← Event Machine</a>
+  <article class="hoja">
+    <h1>Apuntes sobre eventos</h1>
+    <p>Un evento es algo que pasa en la página: un click, una tecla presionada, el mouse que entra o sale de un elemento.</p>
+    <p>Con addEventListener le decimos al navegador qué función tiene que ejecutar cuando ese evento ocurra.</p>
+    <p>La función que pasamos como segundo argumento se llama callback, porque el navegador la llama más tarde.</p>
+    <p>Cuando agregamos el mismo listener a varios elementos, la palabra this apunta al elemento que disparó el evento.</p>
+    <p>Por eso este resaltador funciona con un solo bucle: cada párrafo sabe que el resaltado es para sí mismo.</p>
+    <p>Probá hacer click varias veces sobre el mismo párrafo: toggle pone la clase si no está y la saca si ya estaba.</p>
+  </article>
+  <p class="contador" id="contador">0 párrafos resaltados</p>
+  <script src="resaltador.js"></script>
+</body>
+</html>

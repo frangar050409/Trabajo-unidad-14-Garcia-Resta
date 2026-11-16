@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Machine · Unidad 14</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hub.css">
+</head>
+<body>
+  <div class="ondas" aria-hidden="true"><span></span><span></span><span></span></div>
+  <header>
+    <p class="chip">Unidad 14 · Eventos</p>
+    <h1>Event<br>Machine</h1>
+    <p>click, mouseover, keydown: cada evento dispara algo. Elegí un módulo.</p>
+  </header>
+  <main class="modulos">
+    <a href="beeper.html" class="modulo" style="--c1:#ff3cac; --c2:#784ba0">
+      <span class="modulo__icono">🔊</span>
+      <h2>Beeper</h2>
+      <p>Un botón BEEP que agrega párrafos y cambia el color del body.</p>
+      <code>addEventListener("click", seEjecutaEnEvento)</code>
+    </a>
+    <a href="resaltador.html" class="modulo" style="--c1:#ffe259; --c2:#ffa751">
+      <span class="modulo__icono">🖍️</span>
+      <h2>Resaltador</h2>
+      <p>Hacé click en un párrafo para resaltarlo con this.</p>
+      <code>this.classList.toggle("resaltado")</code>
+    </a>
+    <a href="teclado.html" class="modulo" style="--c1:#00f5a0; --c2:#00d9f5">
+      <span class="modulo__icono">⌨️</span>
+      <h2>Teclado cromático</h2>
+      <p>Cada tecla suena y dibuja una forma. El desafío estilo Patatap.</p>
+      <code>addEventListener("keydown", e =&gt; e.key)</code>
+    </a>
+  </main>
+  <footer>Francisco García R. · Plataforma 5</footer>
+</body>
+</html>

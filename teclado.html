@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teclado cromático</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="teclado.css">
+</head>
+<body>
+  <a class="volver" href="index.html">← Event Machine</a>
+  <canvas id="lienzo"></canvas>
+  <section class="info">
+    <h1>Eventos disparados por el teclado</h1>
+    <input type="text" id="input" placeholder="Escribí algo acá..." autocomplete="off">
+    <hr>
+    <div class="datos">
+      <p>charCodeAt <label id="code">—</label></p>
+      <p>e.code <label id="string">—</label></p>
+    </div>
+    <p class="ayuda">Tocá cualquier letra o número: cada tecla tiene su nota y su forma.</p>
+  </section>
+  <script src="teclado.js"></script>
+</body>
+</html>
